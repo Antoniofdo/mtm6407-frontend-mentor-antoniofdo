@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro section with dropdown navigation</title>
+
+  <!-- Boost -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top -->
+  <nav class="navbar navbar-expand-lg px-4 py-3">
+    <div class="container-fluid">
+
+      <!-- Mark -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.svg" alt="Snap logo">
+      </a>
+
+      <!-- Menu -->
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-label="Toggle navigation"
+      >
+        <img src="./images/icon-menu.svg" alt="">
+      </button>
+
+      <!-- List -->
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <ul class="navbar-nav me-auto ms-lg-4">
+          <li class="nav-item dropdown">
+            <a class="link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Features
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-calendar.svg" alt=""> Calendar</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-reminders.svg" alt=""> Reminders</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-planning.svg" alt=""> Planning</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Company
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="link" href="#">Careers</a></li>
+          <li class="nav-item"><a class="link" href="#">About</a></li>
+        </ul>
+
+        <!-- User -->
+        <div class="group d-flex align-items-center gap-3">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="join">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body -->
+  <section class="main container">
+    <div class="row align-items-center">
+
+      <!-- Copy -->
+      <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start px-4">
+        <h1 class="title">Make remote work</h1>
+
+        <p class="text">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <a href="#" class="btn btn-dark button">Learn more</a>
+
+        <!-- Logos -->
+        <div class="brand mt-5 d-flex justify-content-between flex-wrap">
+          <img src="./images/client-databiz.svg" alt="Databiz">
+          <img src="./images/client-audiophile.svg" alt="Audiophile">
+          <img src="./images/client-meet.svg" alt="Meet">
+          <img src="./images/client-maker.svg" alt="Maker">
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="col-lg-6 order-1 order-lg-2 text-center">
+        <img src="./images/image-hero-desktop.png" class="img-fluid d-none d-lg-block" alt="Hero image">
+        <img src="./images/image-hero-mobile.png" class="img-fluid d-lg-none w-100" alt="Hero image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Code -->
+  <script src="script.js"></script>
+</body>
+</html>
